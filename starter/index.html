@@ -35,12 +35,12 @@
 				</div>
 				
 				<div class="">
-					<button class="btn btn-success rounded-pill"><i class="fa fa-plus"></i> Add Task</a>
+					<button class="btn btn-success rounded-pill"  data-bs-toggle="modal" data-bs-target="#modal"><i class="fa fa-plus"></i> Add Task</a>
 				</div>
 			</div>
 			
-			<div class="row ">
-				<div class="col-lg-4 col-sm-12">
+			<div class="row">
+				<div class="col-lg-4 col-sm-12 col-md-6 my-3">
 					<div class="rounded-top">
 						<div class="bg-dark text-white p-2 rounded-top">
 							<h4 class="">To do (<span id="to-do-tasks-count">5</span>)</h4>
@@ -48,7 +48,7 @@
 						</div>
 						<div class="d-flex flex-column" id="to-do-tasks d-flex">
 							<!-- TO DO TASKS HERE -->
-							<button class="d-flex align-items-center ">
+							<button class="d-flex align-items-center border-0 border-top">
 								<div class="col-1 text-success">
 									<i class="fa-regular fa-circle-question fa-2xl"></i> 
 								</div>
@@ -64,7 +64,7 @@
 									</div>
 								</div>
 							</button>
-							<button class="d-flex align-items-center ">
+							<button class="d-flex align-items-center border-0 border-top">
 								<div class="col-1 text-success">
 									<i class="fa-regular fa-circle-question fa-2xl"></i> 
 								</div>
@@ -85,7 +85,7 @@
 									</div>
 								</div>
 							</button>
-							<button class="d-flex align-items-center ">
+							<button class="d-flex align-items-center border-0 border-top">
 								<div class="col-1 text-success">
 									<i class="fa-regular fa-circle-question fa-2xl"></i> 
 								</div>
@@ -101,7 +101,7 @@
 									</div>
 								</div>
 							</button>
-							<button class="d-flex align-items-center ">
+							<button class="d-flex align-items-center border-0 border-top">
 								<div class="col-1 text-success">
 									<i class="fa-regular fa-circle-question fa-2xl"></i> 
 								</div>
@@ -117,7 +117,7 @@
 									</div>
 								</div>
 							</button>
-							<button class="d-flex align-items-center ">
+							<button class="d-flex align-items-center border-0 border-top">
 								<div class="col-1 text-success">
 									<i class="fa-regular fa-circle-question fa-2xl"></i> 
 								</div>
@@ -136,20 +136,20 @@
 						</div>
 					</div>
 				 </div>
-				 <div class="col-lg-4 col-sm-12">
+				 <div class="col-lg-4 col-sm-12 col-md-6 my-3">
 					<div class="d-flex flex-column">
-						<div class="bg-dark text-white p-2">
+						<div class="bg-dark text-white p-2 rounded-top">
 							<h4 class="">In Progress (<span id="in-progress-tasks-count">4</span>)</h4>
 
 						</div>
 						<div class="d-flex flex-column" id="in-progress-tasks">
 							<!-- IN PROGRESS TASKS HERE -->
-							<button class="d-flex align-items-center ">
+							<button class="d-flex align-items-center  border-0 border-top">
 								<div class="col-1 text-success">
 									<i class="fa fa-circle-notch fa-2xl"></i> 
 								</div>
 								<div class="col-11 text-start">
-									<div class="">Describe steps to reproduce an issue</div>
+									<div class="fw-800">Describe steps to reproduce an issue</div>
 									<div class="">
 										<div class="">#6 created in 2022-10-08</div>
 										<div class="" title="including as many details as possible.">including as many details as possible.</div>
@@ -160,12 +160,12 @@
 									</div>
 								</div>
 							</button>
-							<button class="d-flex align-items-center ">
+							<button class="d-flex align-items-center  border-0 border-top">
 								<div class="col-1 text-success">
 									<i class="fa fa-circle-notch fa-2xl"></i> 
 								</div>
 								<div class="col-11 text-start">
-									<div class="">Provide access</div>
+									<div class="fw-800">Provide access</div>
 									<div class="">
 										<div class="">#7 created in 2022-10-08</div>
 										<div class="" title="to the affected account and services if possible. It might be hard to reproduce the exact environment on a local machine.">to the affected account and services if possible. It mi...</div>
@@ -176,12 +176,12 @@
 									</div>
 								</div>
 							</button>
-							<button class="d-flex align-items-center ">
+							<button class="d-flex align-items-center  border-0 border-top">
 								<div class="col-1 text-success">
 									<i class="fa fa-circle-notch fa-2xl"></i> 
 								</div>
 								<div class="col-11 text-start">
-									<div class="">Provide environment information</div>
+									<div class="fw-800">Provide environment information</div>
 									<div class="">
 										<div class="">#8 created in 2022-10-08</div>
 										<div class="" title="i.e., browser version, operating system version etc. Sometimes a list of installed browser plugins and extensions might be helpful as well.">i.e., browser version, operating system version etc. So...</div>
@@ -192,12 +192,12 @@
 									</div>
 								</div>
 							</button>
-							<button class="d-flex align-items-center ">
+							<button class="d-flex align-items-center border-0 border-top">
 								<div class="col-1 text-success">
 									<i class="fa fa-circle-notch fa-2xl"></i> 
 								</div>
 								<div class="col-11 text-start">
-									<div class="">Provide a link to an exception and/or a stack trace</div>
+									<div class="fw-800">Provide a link to an exception and/or a stack trace</div>
 									<div class="">
 										<div class="">#9 created in 2022-10-08</div>
 										<div class="" title="as investigating those is usually the first step to take in resolving the problem.">as investigating those is usually the first step to tak...</div>
@@ -211,20 +211,20 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-sm-12">
+				<div class="col-lg-4 col-sm-12 col-md-6 my-3">
 					<div class="">
-						<div class="bg-dark text-white p-2">
+						<div class="bg-dark text-white p-2 rounded-top">
 							<h4 class="">Done (<span id="done-tasks-count">4</span>)</h4>
 
 						</div>
 						<div class="d-flex flex-column" id="done-tasks">
 							<!-- DONE TASKS HERE -->
-							<button class="d-flex align-items-center ">
+							<button class="d-flex align-items-center border-0 border-top">
 								<div class="col-1 text-success">
 									<i class="fa-regular fa-circle-check fa-2xl"></i>
 								</div>
 								<div class="col-11 text-start">
-									<div class="">Provide access to logs</div>
+									<div class="fw-800">Provide access to logs</div>
 									<div class="">
 										<div class="">#10 created in 2022-10-08</div>
 										<div class="" title="as they can be helpful in reproducing the steps that caused the problem in the first place.">as they can be helpful in reproducing the steps that ca...</div>
@@ -235,12 +235,12 @@
 									</div>
 								</div>
 							</button>
-							<button class="d-flex align-items-center ">
+							<button class="d-flex align-items-center border-0 border-top">
 								<div class="col-1 text-success">
 									<i class="fa-regular fa-circle-check fa-2xl"></i>
 								</div>
 								<div class="col-11 text-start">
-									<div class="">Provide access to the affected server or database dump</div>
+									<div class="fw-800">Provide access to the affected server or database dump</div>
 									<div class="">
 										<div class="">#11 created in 2022-10-08</div>
 										<div class="" title="If it is possible and when it does not violate security policies, it is usually helpful for the developer to access the original data that might have played a role in the problem.">If it is possible and when it does not violate security...</div>
@@ -251,35 +251,35 @@
 									</div>
 								</div>
 							</button>
-							<button class="d-flex align-items-center ">
+							<button class="d-flex align-items-center border-0 border-top">
 								<div class="col-1 text-success">
 									<i class="fa-regular fa-circle-check fa-2xl"></i>
 								</div>
 								<div class="col-11 text-start">
-									<div class="">Make a screencast</div>
+									<div class="fw-800">Make a screencast</div>
 									<div class="">
 										<div class="">#12 created in 2022-10-08</div>
 										<div class="" title="It is not always necessary, but many times a short screencast (or at least a screenshot) says more than a thousand words. While working on MacOS you can use QuickTime Player for the purpose but there are plenty of tools available for other operating systems as well.">It is not always necessary, but many times a short scre...</div>
 									</div>
 									<div class="">
-										<span class="btn btn-primary">High</span>
+										<span class="btn btn-primary btn-sm">High</span>
 										<span class="btn btn-secondary btn-sm">Bug</span>
 									</div>
 								</div>
 							</button>
-							<button class="d-flex align-items-center ">
+							<button class="d-flex align-items-center border-0 border-top">
 								<div class="col-1 text-success">
 									<i class="fa-regular fa-circle-check fa-2xl"></i>
 								</div>
 								<div class="col-11 text-start">
-									<div class="">Provide contact information</div>
+									<div class="fw-800">Provide contact information</div>
 									<div class="">
 										<div class="">#13 created in 2022-10-08</div>
 										<div class="" title="of the person that reported the bug. This will not always be possible, but in some cases it might be advantageous and most effective if a developer can have a chat with a person that actually experienced the bug, especially if the steps to reproduce a problem are not deterministic.">of the person that reported the bug. This will not alwa...</div>
 									</div>
 									<div class="">
-										<span class="btn btn-primary btn-sm">High</span>
-										<span class="btn btn-secondary btn-sm">Bug</span>
+										<span class="btn btn-primary btn-sm fs-6">High</span>
+										<span class="btn btn-secondary btn-sm fs-6">Bug</span>
 									</div>
 								</div>
 							</button>
@@ -289,8 +289,7 @@
 			</div>
 		</div>
 		<!-- END #content -->
-		
-		
+
 		<!-- BEGIN scroll-top-btn -->
 		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top" data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
 		<!-- END scroll-top-btn -->
@@ -298,8 +297,61 @@
 	<!-- END #app -->
 	
 	<!-- TASK MODAL -->
-	<div class="modal fade" id="modal-task">
+	<div class="modal fade" id="modal">
 		<!-- Modal content goes here -->
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="exampleModalLabel">Add Task</h5>
+				  <button type="button" class="close border-0 bg-transparent"  data-bs-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="modal-body">
+				  <form>
+					<div class="form-group">
+					  <label for="recipient-name" class="col-form-label">Title</label>
+					  <input type="text" class="form-control" id="recipient-name">
+					</div>
+					<label class="col-form-label">Title</label>
+					<div class="form-check mx-3">
+							<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+						    <label class="form-check-label" for="flexRadioDefault1">Feature</label>
+					</div>
+					<div class="form-check mx-3">
+						<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+						<label class="form-check-label" for="flexRadioDefault">Bug</label>
+					 </div>
+					 <label class="col-form-label">Priority</label>
+					 <select class="form-select" aria-label="Default select example">
+						<option selected>Please select</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					  </select>
+					  <label class="col-form-label">Status</label>
+					  <select class="form-select" aria-label="Default select example">
+						<option selected>Please select</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					  </select>	
+					  <div class="form-group">
+						<label for="recipient-name" class="col-form-label">Date</label>
+						<input type="date" class="form-control" id="recipient-name">
+					  </div>				
+					<div class="form-group">
+					  <label for="message-text" class="col-form-label">Description:</label>
+					  <textarea class="form-control" id="message-text"></textarea>
+					</div>
+				  </form>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				  <button type="button" class="btn btn-primary">Send message</button>
+				</div>
+			  </div>
+			</div>
 	</div>
 	
 	<!-- ================== BEGIN core-js ================== -->
