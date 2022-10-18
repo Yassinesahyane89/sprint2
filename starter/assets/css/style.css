@@ -13,3 +13,12 @@
     padding: 1.5px 6px;
     font-size: 11px;
 }
+
+.title1{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
