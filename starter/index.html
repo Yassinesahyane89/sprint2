@@ -317,7 +317,7 @@
 						<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="Feature">
 						<label class="form-check-label" for="flexRadioDefault1">Feature</label> <br>
 						<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked value="Bug">
-						<label class="form-check-label" for="flexRadioDefault">Bug</label>
+						<label class="form-check-label" for="flexRadioDefault2">Bug</label>
 					 </div>
 					 <label class="col-form-label">Priority</label>
 					 <select class="form-select" aria-label="Default select example" id="Proiority">
@@ -344,6 +344,60 @@
 				<div class="modal-footer">
 				  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="BtnClose">Close</button>
 				  <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="BtnSave">Save</button>
+				</div>
+			  </div>
+			</div>
+	</div>
+	<!-- Upedat -->
+	<div class="modal fade" id="update">
+		<!-- Modal content goes here -->
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="exampleModalLabel">edit task</h5>
+				  <button type="button" class="close border-0 bg-transparent"  data-bs-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="modal-body">
+				  <form>
+					<div class="form-group">
+					  <label for="recipient-name" class="col-form-label">Title</label>
+					  <input type="text" class="form-control" id="Updat-recipient-name">
+					</div>
+					<label class="col-form-label">Type</label>
+					<div class="form-check mx-3" id="radio">
+						<input class="form-check-input" type="radio" name="UpdatflexRadioDefault" id="UpdatflexRadioDefault1" value="Feature">
+						<label class="form-check-label" for="UpdatflexRadioDefault1">Feature</label> <br>
+						<input class="form-check-input" type="radio" name="UpdatflexRadioDefault" id="UpdatflexRadioDefault2" checked value="Bug">
+						<label class="form-check-label" for="UpdatflexRadioDefault2">Bug</label>
+					 </div>
+					 <label class="col-form-label">Priority</label>
+					 <select class="form-select" aria-label="Default select example" id="UpdatProiority">
+						<option selected>Please select</option>
+						<option value="High">High</option>
+					  </select>
+					  <label class="col-form-label">Status</label>
+					  <select class="form-select" aria-label="Default select example" id="Updatstatus">
+						<option selected>Please select</option>
+						<option value="To Do">To Do</option>
+						<option value="In Progress">In Progress</option>
+						<option value="Done">Done</option>
+					  </select>	
+					  <div class="form-group">
+						<label for="date-input" class="col-form-label">Date</label>
+						<input type="date" class="form-control" id="Updat-date-input">
+					  </div>				
+					<div class="form-group">
+					  <label for="message-text" class="col-form-label">Description:</label>
+					  <textarea class="form-control" id="Updat-message-text"></textarea>
+					</div>
+				  </form>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="UpdateBtnClose">Close</button>
+				  <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="UpdatBtnSave">Save</button>
+				  <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="UpdatBtnDelete">Delete</button>
 				</div>
 			  </div>
 			</div>
