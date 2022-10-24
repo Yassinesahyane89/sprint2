@@ -99,8 +99,11 @@ function saveTaskEventSetUp() {
   }
 }
 saveTaskEventSetUp();
+let updatebtnsave = document.getElementById("UpdatBtnSave");
+let indexA;
 function editTask(index) {
   // Initialisez task form
+  indexA = index;
   document.getElementById("Updat-recipient-name").value = tasks[index].title;
   document.querySelector('input[name="flexRadioDefault"]:checked').value =
     tasks[index].type;
@@ -110,55 +113,71 @@ function editTask(index) {
   document.getElementById("Updat-message-text").value =
     tasks[index].description;
   // Affichez updates
-  document
-    .getElementById("UpdatBtnSave")
-    .addEventListener("click", updateTasks);
-  function updateTasks() {
-    reloadTasks();
-    tasks[index].title = document.getElementById("Updat-recipient-name").value;
-    tasks[index].type = document.querySelector(
-      'input[name="flexRadioDefault"]:checked'
-    ).value;
-    tasks[index].priority = document.getElementById("UpdatProiority").value;
-    tasks[index].status = document.getElementById("Updatstatus").value;
-    tasks[index].date = document.getElementById("Updat-date-input").value;
-    tasks[index].description =
-      document.getElementById("Updat-message-text").value;
-    reloadTask();
-  }
+  
   // Delete Button
-  document
-    .getElementById("UpdatBtnDelete")
-    .addEventListener("click", deleteTasks);
-  function deleteTasks() {
-    reloadTasks();
-    tasks.splice(index, 1);
-    reloadTask();
-  }
+  // document
+  //   .getElementById("UpdatBtnDelete")
+  //   .addEventListener("click", deleteTasks);
+  // function deleteTasks() {
+  //   reloadTasks();
+  //   tasks.splice(index, 1);
+  //   reloadTask();
+  // }
   // Définir l’index en entrée cachée pour l’utiliser en Update et Delete
   // Definir FORM INPUTS
   // Ouvrir Modal form
 }
-function updateTask() {
-  // GET TASK ATTRIBUTES FROM INPUTS
+updatebtnsave.addEventListener("click", ()=>{
+  // let index=document.getElementById("index").innerHTML-1;
+  // console.log(index);
   reloadTasks();
-  // Créez task object
-  // Remplacer ancienne task par nouvelle task
-  // Fermer Modal form
-  // Refresh tasks
-}
 
-function deleteTask() {
-  // Get index of task in the array
-  // Remove task from array by index splice function
-  // close modal form
-  // refresh tasks
-}
+    tasks[indexA].title = document.getElementById("Updat-recipient-name").value;
+    tasks[indexA].type = document.querySelector(
+      'input[name="flexRadioDefault"]:checked'
+    ).value;
+    tasks[indexA].priority = document.getElementById("UpdatProiority").value;
+    tasks[indexA].status = document.getElementById("Updatstatus").value;
+    tasks[indexA].date = document.getElementById("Updat-date-input").value;
+    tasks[indexA].description =
+      document.getElementById("Updat-message-text").value;
+  reloadTask();
+});
+  
 
-function initTaskForm() {
-  // Clear task form from data
-  // Hide all action buttons
-}
+  // function updateTasks() {
+  //   reloadTasks();
+  //   tasks[index].title = document.getElementById("Updat-recipient-name").value;
+  //   tasks[index].type = document.querySelector(
+  //     'input[name="flexRadioDefault"]:checked'
+  //   ).value;
+  //   tasks[index].priority = document.getElementById("UpdatProiority").value;
+  //   tasks[index].status = document.getElementById("Updatstatus").value;
+  //   tasks[index].date = document.getElementById("Updat-date-input").value;
+  //   tasks[index].description =
+  //     document.getElementById("Updat-message-text").value;
+  //   reloadTask();
+  // }
+// function updateTask() {
+//   // GET TASK ATTRIBUTES FROM INPUTS
+//   reloadTasks();
+//   // Créez task object
+//   // Remplacer ancienne task par nouvelle task
+//   // Fermer Modal form
+//   // Refresh tasks
+// }
+
+// function deleteTask() {
+//   // Get index of task in the array
+//   // Remove task from array by index splice function
+//   // close modal form
+//   // refresh tasks
+// }
+
+// function initTaskForm() {
+//   // Clear task form from data
+//   // Hide all action buttons
+// }
 
 function reloadTasks() {
   // Remove tasks elements
